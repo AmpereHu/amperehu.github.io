@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>SaoPiao Review Samples</title>
+  <meta name="description" content="Sample Taiwan e-invoice QR codes for testing SaoPiao. Not real invoices.">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .notice {
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: #fff4d6;
+      color: #5c4400;
+      font-weight: 600;
+    }
+    @media (prefers-color-scheme: dark) {
+      .notice { background: #3a2f10; color: #ffe29a; }
+    }
+    .invoice {
+      margin-top: 20px;
+      padding: 20px;
+      border: 2px dashed var(--line);
+      border-radius: 16px;
+      background: #ffffff;
+      color: #1a2420;
+    }
+    .invoice .stamp {
+      display: inline-block;
+      padding: 2px 10px;
+      border: 2px solid #c0392b;
+      border-radius: 6px;
+      color: #c0392b;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .invoice h3 { margin: 12px 0 4px; }
+    .invoice .meta { color: #5b6b64; }
+    .qr-pair {
+      display: flex;
+      gap: 16px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .qr-pair figure { margin: 0; text-align: center; }
+    .qr-pair img {
+      width: 180px;
+      height: 180px;
+      image-rendering: pixelated;
+    }
+    .qr-pair figcaption { font-size: 0.85rem; color: #5b6b64; }
+    ol li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+<main>
+  <header class="site">
+    <img src="/saopiao/icon.png" alt="SaoPiao app icon">
+    <div>
+      <h1>SaoPiao Review Samples</h1>
+      <p>掃票匯 審核用範例發票</p>
+    </div>
+  </header>
+
+  <p class="notice">
+    SAMPLE DATA ONLY — these are NOT real invoices. They follow the Taiwan e-invoice QR code format
+    so the app can be tested outside Taiwan.<br>
+    範例資料，非真實發票。
+  </p>
+
+  <h2>How to test</h2>
+  <ol>
+    <li>Open SaoPiao on an iPhone and allow camera access. (The ad-tracking prompt may appear first; either choice is fine.)</li>
+    <li>On the <strong>Scan</strong> tab, choose <strong>10 張</strong> (10 invoices) and tap <strong>開始掃描</strong> (Start scanning).</li>
+    <li>Point the camera at <strong>Sample A</strong> below (both QR codes in view). The counter shows 1 / 10 with a “已加入” (added) message.</li>
+    <li>Point the camera at <strong>Sample A again</strong> — the app shows “已掃過” (already scanned); duplicates are not added.</li>
+    <li>Point the camera at <strong>Sample B</strong> with <strong>both</strong> QR codes in view. The app merges the right QR code, so all 6 items are recorded.</li>
+    <li>Tap <strong>完成</strong> (Done). The batch preview lists both invoices with totals.</li>
+    <li>Tap the share icon → <strong>CSV</strong> or <strong>Excel (XLSX)</strong> to open the iOS share sheet.</li>
+  </ol>
+  <p class="meta">
+    The seller tax ID in these samples is fictitious, so the store-name lookup returns no result and the app shows the tax ID instead.
+    With real invoices, the store name and address are filled in from Taiwan’s Ministry of Finance open data.
+  </p>
+
+  <div class="invoice" id="a">
+    <span class="stamp">SAMPLE</span>
+    <h3>Sample A — 2 items, total NT$120</h3>
+    <div class="meta">ZZ-00000001 · 2026-09-30 · 拿鐵咖啡 ×1, 可頌 ×1</div>
+    <div class="qr-pair">
+      <figure><img src="a-left.png" alt="Sample A left QR code"><figcaption>Left QR</figcaption></figure>
+      <figure><img src="a-right.png" alt="Sample A right QR code"><figcaption>Right QR</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="invoice" id="b">
+    <span class="stamp">SAMPLE</span>
+    <h3>Sample B — 6 items across both QR codes, total NT$265</h3>
+    <div class="meta">ZZ-00000002 · 2026-09-30 · 2 items in the left QR, 4 in the right QR</div>
+    <div class="qr-pair">
+      <figure><img src="b-left.png" alt="Sample B left QR code"><figcaption>Left QR</figcaption></figure>
+      <figure><img src="b-right.png" alt="Sample B right QR code"><figcaption>Right QR</figcaption></figure>
+    </div>
+  </div>
+
+  <footer>
+    <a href="/saopiao/support.html">Support</a> · <a href="/saopiao/privacy.html#en">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
