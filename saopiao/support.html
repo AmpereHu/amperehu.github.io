@@ -57,9 +57,15 @@
     建議改匯出「Excel (XLSX)」格式。CSV 已使用 UTF-8（含 BOM）編碼，一般版本的 Excel 可以正確顯示中文；若仍有問題，請使用 Excel 的「資料 → 從文字/CSV」匯入並選擇 UTF-8。
   </p>
 
+  <h3>店家名稱是怎麼查到的？為什麼顯示公司全名？</h3>
+  <p>
+    App 會以發票上的賣方統編，向財政部公開的營業（稅籍）登記資料查詢，因此顯示的是<strong>登記的營業名稱</strong>（例如「統一超商股份有限公司」），而不是門市名稱；同一連鎖品牌的分店通常會顯示相同名稱。
+    查詢需要網路，離線時會先顯示統編，下次開啟批次或匯出時自動補查。不需要此功能可在 App「設定 → 自動查詢店家名稱」關閉。
+  </p>
+
   <h3>資料存在哪裡？會上傳嗎？</h3>
   <p>
-    所有資料只存在您的 iPhone 上，不會上傳到任何伺服器。詳見<a href="/saopiao/privacy.html">隱私權政策</a>。
+    發票資料只存在您的 iPhone 上，不會上傳到任何伺服器。唯一例外是查詢店家名稱時，只會傳送賣方統編。詳見<a href="/saopiao/privacy.html">隱私權政策</a>。
   </p>
 
   <h3>相機無法使用？</h3>
@@ -73,7 +79,8 @@
     For questions or feedback, email
     <a href="mailto:anderson.pa.hu@icloud.com">anderson.pa.hu@icloud.com</a>
     with your iPhone model, iOS version, and App version.
-    All data stays on your device — see the <a href="/saopiao/privacy.html#en">Privacy Policy</a>.
+    Invoice data stays on your device; only the seller's tax ID is sent when looking up store names (can be turned off in Settings).
+    See the <a href="/saopiao/privacy.html#en">Privacy Policy</a>.
   </p>
 
   <footer>
