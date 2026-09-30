@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>掃票匯 支援</title>
+  <meta name="description" content="掃票匯（SaoPiao）常見問題與聯絡方式 / Support">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <img src="/saopiao/icon.png" alt="掃票匯 App 圖示">
+    <div>
+      <h1>掃票匯 支援</h1>
+      <p>SaoPiao Support</p>
+    </div>
+  </header>
+
+  <p>
+    掃票匯可以連續掃描台灣電子發票上的 QRCode，自動去除重複，並一鍵匯出 CSV 或 Excel（XLSX）檔案。
+  </p>
+
+  <h2>聯絡我們</h2>
+  <p>
+    問題回報或功能建議，請來信
+    <a href="mailto:anderson.pa.hu@icloud.com?subject=%E6%8E%83%E7%A5%A8%E5%8C%AF%20%E6%94%AF%E6%8F%B4">anderson.pa.hu@icloud.com</a>，
+    並附上 iPhone 型號、iOS 版本與 App 版本（App「設定」頁可查看）。
+  </p>
+
+  <h2>常見問題</h2>
+
+  <h3>支援哪些發票？</h3>
+  <p>
+    目前支援印有兩個 QRCode 的<strong>電子發票證明聯</strong>。傳統手開或收銀機列印、沒有 QRCode 的發票，預計於後續版本以文字辨識支援。
+  </p>
+
+  <h3>掃不到或掃很慢？</h3>
+  <ul>
+    <li>請對準發票<strong>左側</strong>的 QRCode，距離約 10–20 公分。</li>
+    <li>保持光線充足，避免反光或發票皺摺。</li>
+    <li>感熱紙發票褪色時可能無法辨識。</li>
+  </ul>
+
+  <h3>為什麼顯示「已掃過」？</h3>
+  <p>
+    同一批次中，發票號碼與日期相同的發票只會記錄一次，避免重複計算。
+  </p>
+
+  <h3>為什麼顯示「品項不完整」？</h3>
+  <p>
+    品項較多的發票，後半段品項記錄在<strong>右側</strong>的 QRCode。請讓左右兩個 QRCode 同時出現在畫面中再掃一次，App 會自動補齊。
+  </p>
+
+  <h3>用 Excel 開啟 CSV 出現亂碼？</h3>
+  <p>
+    建議改匯出「Excel (XLSX)」格式。CSV 已使用 UTF-8（含 BOM）編碼，一般版本的 Excel 可以正確顯示中文；若仍有問題，請使用 Excel 的「資料 → 從文字/CSV」匯入並選擇 UTF-8。
+  </p>
+
+  <h3>資料存在哪裡？會上傳嗎？</h3>
+  <p>
+    所有資料只存在您的 iPhone 上，不會上傳到任何伺服器。詳見<a href="/saopiao/privacy.html">隱私權政策</a>。
+  </p>
+
+  <h3>相機無法使用？</h3>
+  <p>
+    請到 iOS「設定 → 掃票匯 → 相機」開啟權限。即時掃描需要 iPhone XS / XR 以上機型。
+  </p>
+
+  <h2 lang="en">English</h2>
+  <p lang="en">
+    SaoPiao scans QR codes on Taiwan e-invoices in batches, removes duplicates, and exports CSV or Excel (XLSX) files.
+    For questions or feedback, email
+    <a href="mailto:anderson.pa.hu@icloud.com">anderson.pa.hu@icloud.com</a>
+    with your iPhone model, iOS version, and App version.
+    All data stays on your device — see the <a href="/saopiao/privacy.html#en">Privacy Policy</a>.
+  </p>
+
+  <footer>
+    <a href="/saopiao/privacy.html">隱私權政策／Privacy Policy</a> · <a href="/">Pei-An Hu</a>
+  </footer>
+</main>
+</body>
+</html>
